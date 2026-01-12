@@ -5,10 +5,207 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Portfolio - Kasjah Houben</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<p>Kasjah Houben</p>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <h1 class="navbar-brand">Kasjah Houben</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Over Mij</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projecten</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Section 1: Hero Section (Tekst links, Afbeelding rechts) -->
+        <section id="hero" class="hero-section py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="section-title">Welkom op mijn Portfolio</h2>
+                        <p class="hero-text">
+                            Hallo! Ik ben Kasjah Houben, een ambitieuze ontwikkelaar en designer.
+                            Op deze website kun je meer over mij leren en mijn projecten bekijken.
+                            Ik ben gepassioneerd over het creëren van mooie en functionele webapplicaties.
+                        </p>
+                        <button class="btn btn-primary">Contact Me</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="assets/594335941_2030096501123142_8631841085882891878_n.jpg" alt="Hero Image" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: About Me Section (Foto links, Tekst rechts) -->
+        <section id="about" class="about-section py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Over Mij</h2>
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <img src="https://via.placeholder.com/350x350" alt="Over Mij" class="img-fluid rounded">
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="about-text">
+                            Ik ben een passioneerde developer met ervaring in verschillende programmeren-talen
+                            en frameworks. Ik hou van het proces van het creëren van user-friendly interfaces en het
+                            schrijven van schone, onderhoudbare code.
+                        </p>
+                        <p class="about-text">
+                            Mijn focus ligt op het leren en groeien als professioneel. Ik werk graag aan uitdagende
+                            projecten die mij helpen om mijn vaardigheden te verbeteren en nieuwe dingen bij te leren.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Projects Section (3 Project Cards) -->
+        <section id="projects" class="projects-section py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Projecten</h2>
+                <div class="row g-4">
+                    <!-- Project 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <article class="project-card">
+                            <img src="" alt="Project 1" class="project-image"><img src="assets/gumbo.jpg" height="400"
+                                                                                   width="400"/>
+                            <div class="project-content">
+                                <h3 class="etalage/crafts ">Project 1</h3>
+                                <p class="project-description">
+                                    Een interactieve webapplicatie gemaakt met HTML, CSS en JavaScript.
+                                    Dit project toont mijn basisvaardigheden in web development.
+                                </p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Meer Info</a>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <article class="project-card">
+                            <img src="" alt="Project 2" class="project-image"><img src="assets/menno.jpg" height="547"
+                                                                                   width="546"/>
+                            <div class="project-content">
+                                <h3 class="animation">Project 2</h3>
+                                <p class="project-description">
+                                    Een responsive website ontworpen met Bootstrap. Dit project demonstreert
+                                    mijn kennis van moderne CSS frameworks en responsive design.
+                                </p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Meer Info</a>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <article class="project-card">
+                            <img src="" alt="Project 3" class="project-image"><img src="assets/me.jpg" height="828"
+                                                                                   width="827"/>
+                            <div class="project-content">
+                                <h3 class="project-title">Project 3</h3>
+                                <p class="project-description">
+                                    Een dynamische applicatie met API-integratie. Dit project toont mijn
+                                    gevorderde JavaScript-vaardigheden en API-integratie kennis.
+                                </p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Meer Info</a>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="col-lg-4 col-md-6">
+                        <article class="project-card">
+                            <img src="https://via.placeholder.com/300x200" alt="Project 4" class="project-image">
+                            <div class="project-content">
+                                <h3 class="project-title">Project 4</h3>
+                                <p class="project-description">
+                                    Voeg hier je projectbeschrijving in. Dit project laat zien wat je hebt gemaakt
+                                    en welke technologieën je hebt gebruikt.
+                                </p>
+                                <p class="project-url">
+                                    <strong>Website:</strong> <a href="https://jouw-website.com" target="_blank" class="url-link">https://jouw-website.com</a>
+                                </p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Meer Info</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Facts Section (3 Facts) -->
+        <section id="facts" class="facts-section py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Feiten Over Mij</h2>
+                <div class="row g-4 text-center">
+                    <!-- Fact 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="fact-card">
+                            <div class="fact-icon">🎓</div>
+                            <h3 class="fact-title">Dedicated Learner</h3>
+                            <p class="fact-description">
+                                Ik ben altijd bezig met het leren van nieuwe technologieën en het verbeteren
+                                van mijn programmeervaardigheden.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Fact 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="fact-card">
+                            <div class="fact-icon">💼</div>
+                            <h3 class="fact-title">Problem Solver</h3>
+                            <p class="fact-description">
+                                Ik geniet ervan om complexe problemen op te lossen en creatieve oplossingen
+                                te vinden voor uitdagende taken.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Fact 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="fact-card">
+                            <div class="fact-icon">🚀</div>
+                            <h3 class="fact-title">Innovatie Focus</h3>
+                            <p class="fact-description">
+                                Ik ben enthousiast over het werken met moderne technologieën en het creëren
+                                van innovatieve digitale ervaringen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2026 Kasjah Houben. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
