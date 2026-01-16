@@ -10,7 +10,34 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add scroll animation for cards
     observeElements();
+
+    // Toggle project description functionality
+    setupToggleDescriptions();
 });
+
+// ==================== Toggle Project Description ====================
+function setupToggleDescriptions() {
+    const toggleButtons = document.querySelectorAll('.toggle-description');
+
+    toggleButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const projectCard = this.closest('.project-card');
+            const description = projectCard.querySelector('.project-description');
+
+            if (description) {
+                description.classList.toggle('expanded');
+
+                // Change button text
+                if (description.classList.contains('expanded')) {
+                    this.textContent = 'Minder Info';
+                } else {
+                    this.textContent = 'Meer Info';
+                }
+            }
+        });
+    });
+}
 
 // ==================== Contact Button Handler ====================
 function handleContactClick() {
