@@ -25,17 +25,53 @@ function setupToggleDescriptions() {
             const projectCard = this.closest('.project-card');
             const description = projectCard.querySelector('.project-description');
 
+            // Close all other project descriptions
+            document.querySelectorAll('.project-description.expanded').forEach(desc => {
+                if (desc !== description) {
+                    desc.classList.remove('expanded');
+                    const otherCard = desc.closest('.project-card');
+                    if (otherCard) {
+                        otherCard.classList.remove('expanded');
+                    }
+                    // Find the button for this description and update text
+                    const otherButton = desc.closest('.project-card').querySelector('.toggle-description');
+                    if (otherButton) {
+                        otherButton.textContent = 'Meer Info';
+                    }
+                }
+            });
+
+            // Toggle current project description
             if (description) {
                 description.classList.toggle('expanded');
+                projectCard.classList.toggle('expanded');
 
                 // Change button text
                 if (description.classList.contains('expanded')) {
-                    this.textContent = 'Minder Info';
-                } else {
-                    this.textContent = 'Meer Info';
                 }
             }
         });
+    });
+
+    // Close expanded projects when scrolling away from projects section
+    window.addEventListener('scroll', function() {
+        const projectsSection = document.querySelector('#projects');
+        const projectsRect = projectsSection.getBoundingClientRect();
+
+        // If scrolled away from projects section, close all expanded descriptions
+        if (projectsRect.bottom < 0 || projectsRect.top > window.innerHeight) {
+            document.querySelectorAll('.project-description.expanded').forEach(desc => {
+                desc.classList.remove('expanded');
+                const card = desc.closest('.project-card');
+                if (card) {
+                    card.classList.remove('expanded');
+                }
+                const button = desc.closest('.project-card').querySelector('.toggle-description');
+                if (button) {
+                    button.textContent = 'Meer Info';
+                }
+            });
+        }
     });
 }
 
