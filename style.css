@@ -295,6 +295,17 @@ body {
     margin: 0;
 }
 
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: #ec9f0d;
+}
+
 /* ==================== Responsive Design ==================== */
 @media (max-width: 768px) {
     .section-title {
